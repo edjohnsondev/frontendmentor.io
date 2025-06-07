@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    // Colors
+    --grey-900: hsl(0, 0%, 8%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-700: hsl(0, 0%, 20%);
+
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+
+    // Custom Colours
+    --bg-color: #f9f9f9;
+    --card: #f2f2f2;
+    --font: #404040;
+    --button: #000;
+
+    // Spacing
+    --space-500: 4rem;
+    --space-300: 2.4rem;
+    --space-200: 1.6rem;
+    --space-150: 1.2rem;
+    --space-100: 0.8rem;
+    --space-50: 0.4rem;
+    
+    // Typography
+    --font-family: 'Inter', sans-serif;
+    --weight-regular: 400;
+    --weight-semi: 600;
+    --weight-bold: 700;
+    --font-size-large: 2.4rem;
+    --font-size-regular: 1.4rem;
+    --line-height: 1.5;
+
+    // Border Radius
+    --radius-regular: 0.8rem;
+    --radius-large: 1.2rem;
+}
+
+.text-preset-1 {
+    font-weight: var(--weight-bold);
+    font-size: var(--font-size-large);
+}
+
+.text-preset-2 {
+    font-weight: var(--weight-regular);
+    font-size: var(--font-size-regular);
+}
+
+.text-preset-2-bold {
+    font-weight: var(--weight-bold);
+    font-size: var(--font-size-regular);
+}
+
+.green {
+    color: var(--green);
+}

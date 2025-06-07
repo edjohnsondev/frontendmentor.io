@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+    color: var(--font);
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    letter-spacing: 0;
+    font-size: var(--font-size-regular);
+}
+
+.container {
+    --bs-gutter-x: var(--space-500);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+
+    a {
+        color: hsl(228, 45%, 44%); 
+    }
+}
