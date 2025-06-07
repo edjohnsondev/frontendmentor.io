@@ -1,0 +1,85 @@
+@use "../abstracts" as *;
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    background-color: color('stone-100');
+
+    @include respond('sm') {
+        background-color: color('white');
+    }
+}
+
+//* Colors
+@each $key, $color in $colors {
+    .#{$key} {
+        color: $color;
+    }
+
+    .bg-#{$key} {
+        background-color: $color;
+    }
+}
+
+body {
+    @extend %textPresetFour;
+    color: color(stone-600);
+    padding: space(1600) 0;
+
+    @include respond('sm') {
+        padding: 0 0 space(400);
+    }
+}
+
+.title {
+    @extend %textPresetOne;
+}
+
+.heading {
+    @extend %textPresetTwo;
+}
+
+.subHeading {
+    @extend %textPresetThree;
+}
+
+.body {
+    @extend %textPresetFour;
+}
+
+.bodyBold {
+    @extend %textPresetFourBold;
+}
+
+.container {
+    @include respond('sm') {
+        max-width: 100%;
+        padding: unset;
+        margin: unset;
+    }
+
+    .row {
+        @include respond('sm') {
+            padding-left: unset;
+            padding-right: unset;
+            margin: unset;
+        }   
+    }
+
+    .row>* {
+         @include respond('sm') {
+            padding-left: unset;
+            padding-right: unset;
+            margin: unset;
+        }   
+    }
+}

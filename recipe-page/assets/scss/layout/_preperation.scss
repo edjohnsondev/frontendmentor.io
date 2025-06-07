@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.preperation {
+    background-color: color('rose-50');
+    padding: space(300);
+    border-radius: space(150);
+    margin: 0 0 space(400);
+
+    h2 {
+        margin-bottom: space(200);
+    }
+}

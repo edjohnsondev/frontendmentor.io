@@ -1,0 +1,70 @@
+@use "../abstracts" as *;
+
+.recipe-wrapper {
+    background-color: color('white');
+    padding: space(500);
+    border-radius: space(300);
+
+    @include respond('sm') {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    ul, ol {
+        margin: 0;
+        padding-left: space(400);
+        list-style: none;
+
+        li {
+            position: relative;
+            padding-left: 0.8rem;
+
+            &:not(:last-child) {
+                margin: 0 0 space(100);
+            }
+
+            span {
+                font-weight: $bold;
+            }
+        }
+    }
+
+    ol {
+        counter-reset: counter;
+        li {
+            counter-increment: counter;
+            &::before {
+                content: counter(counter) ". ";
+                position: absolute;
+                left: -2.4rem;
+                top: 0;
+                color: color('brown-800');
+                @extend %textPresetFourBold;
+            }
+        }
+    }
+
+    ul {
+        li {
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: -2.4rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0.4rem;
+                height: 0.4rem;
+                border-radius: 0.4rem;
+                background-color: color('rose-800');
+            }
+        }
+    }
+
+    section {
+        @include respond('sm') {
+            margin-left: space(400);
+            margin-right: space(400);
+        }
+    }
+}

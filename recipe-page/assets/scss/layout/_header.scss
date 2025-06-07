@@ -1,0 +1,28 @@
+@use "../abstracts" as *;
+
+header {
+    margin-bottom: space(400);
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: space(150);
+        margin-bottom: space(500);
+
+        @include respond('sm') {
+            border-radius: 0;
+        }
+    }
+
+    h1 {
+        margin-bottom: space(300);
+    }
+
+    h1, p {
+        @include respond('sm') {
+            margin-left: space(400);
+            margin-right: space(400);
+        }
+    }
+}

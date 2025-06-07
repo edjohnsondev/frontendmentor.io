@@ -1,0 +1,20 @@
+@use "variables" as *;
+@use "sass:map";
+
+@function color($color) {
+    @if map.has-key($colors, $color) {
+        @return map.get($colors, $color);
+    }
+
+    @warn "Color `#{$color}` not found in $colors map.";
+    @return null;
+}
+
+@function space($size) {
+    @if map.has-key($sizes, $size) {
+        @return map.get($sizes, $size);
+    }
+
+    @warn "Spacing size `#{$size}` not found in $sizes map.";
+    @return null;
+}

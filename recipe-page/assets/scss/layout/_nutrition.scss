@@ -1,0 +1,48 @@
+@use "../abstracts" as *;
+
+.nutrition {
+    h2 {
+        margin: 0 0 space(300);
+    }
+
+    p {
+        margin: 0 0 space(300);
+    }
+
+    .nutrition-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        tr {
+            th {
+                text-align: left;
+                position: relative;
+                left: space(400);
+                font-weight: $regular;
+                padding: space(150) 0;
+            }
+
+            &:first-child {
+                th {
+                    padding: 0 0 space(150);
+                }
+            }
+
+            &:last-child {
+                th {
+                    padding: space(150) 0 0;
+                }
+            }
+        }
+    }
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr td {
+    // padding-block: 10px;
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}

@@ -1,0 +1,50 @@
+$rose-800: #7A284E;
+$rose-50: #FFF7FB;
+$stone-900: #312E2C;
+$stone-600: #5F564D;
+$stone-150: #E3DDD7;
+$stone-100: #F3E5D7;
+$brown-800: #854632;
+$white: #FFFFFF;
+
+$colors: (
+    'rose-800': $rose-800,
+    'rose-50': $rose-50,
+    'stone-900': $stone-900,
+    'stone-600': $stone-600,
+    'stone-150': $stone-150,
+    'stone-100': $stone-100,
+    'brown-800': $brown-800,
+    'white': $white,
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+$fontOutfit: "Outfit", sans-serif;
+$fontYoung: "Young Serif", serif;
+
+$regular: 400;
+$semiBold: 600;
+$bold: 700;
+
+//* Grid breakpoints
+$breakpoints: (
+    xs: 0,
+    sm: 575px,
+    md: 767px,
+    lg: 991px,
+    xl: 1199px,
+    xxl: 1399px,
+);
+
+//* Padding
+$sizes: (
+    1600: 12.8rem,
+    600: 4.8rem,
+    500: 4rem,
+    400: 3.2rem,
+    300: 2.4rem,
+    200: 1.6rem,
+    150: 1.2rem,
+    100: 0.8rem,
+);

@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.ingredients {
+    padding: 0 0 space(400);
+    border-bottom: 1px solid color('stone-150');
+    margin: 0 0 space(400);
+
+    h2 {
+        margin: 0 0 space(300);
+    }
+}

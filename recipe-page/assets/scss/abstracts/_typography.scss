@@ -1,0 +1,32 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+//* Typography
+%textPresetOne {
+    @include typography(4rem, 1, $fontYoung, 0);
+    font-weight: $regular;
+
+    @include respond('md') {
+        @include typography(3.6rem, 1, $fontYoung, 0);
+    }
+}
+
+%textPresetTwo {
+    @include typography(2.8rem, 1, $fontYoung, 0); 
+    font-weight: $regular;
+}
+
+%textPresetThree {
+    @include typography(2rem, 1, $fontOutfit, 0); 
+    font-weight: $semiBold;
+}
+
+%textPresetFour {
+    @include typography(1.6rem, 1.5, $fontOutfit, 0); 
+    font-weight: $regular;
+}
+
+%textPresetFourBold {
+    @include typography(1.6rem, 1.5, $fontOutfit, 0); 
+    font-weight: $bold;
+}
