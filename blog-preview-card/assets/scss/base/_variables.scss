@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
+
+:root {
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-500: hsl(0, 0%, 42%);
+    --color-gray-950: hsl(0, 0%, 7%);
+
+    --font-family-primary: 'Figtree', sans-serif;
+    --font-weight-regular: 500;
+    --font-weight-bold: 800;
+    --font-size-lrg: 24px;
+    --font-size-med: 16px;
+    --font-size-sml: 14px;
+
+    --spacing-300: 24px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+/* Base Classes */
+/* Text Presets */
+.text-preset-1 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: clamp(
+        20px,
+        calc(0.3756vw + 18.5915px),
+        var(--font-size-lrg)
+    );
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.text-preset-2 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-regular);
+    /* 16px (desktop) ↔ 14px (mobile) */
+    font-size: clamp(
+        14px,
+        calc(0.1878vw + 13.2958px),
+        var(--font-size-med)
+    );
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.text-preset-3 {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-regular);
+    font-size: clamp(
+        12px,
+        calc(0.1878vw + 11.2958px),
+        var(--font-size-sml)
+    );
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.text-preset-3-bold {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: clamp(
+        12px,
+        calc(0.1878vw + 11.2958px),
+        var(--font-size-sml)
+    );
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+/* Colours */
+/* Yellow */
+.bg-yellow {
+    background-color: var(--color-yellow);
+}
+.c-yellow {
+    color: var(--color-yellow);
+}
+
+/* Light Grey */
+.bg-500 {
+    background-color: var(--color-gray-500);
+}
+.c-500 {
+    color: var(--color-gray-500);
+}
+
+/* Grey */
+.bg-950 {
+    background-color: var(--color-gray-950);
+}
+.c-950 {
+    color: var(--color-gray-950);
+}
+
+// Border Radius
+.br-lrg {
+    border-radius: 20px;
+}
+
+.br-med {
+    border-radius: 10px;
+}
+
+.br-sml {
+    border-radius: 4px;
+}
